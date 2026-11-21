@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PADFIX — serwis kontrolerów Xbox. Naprawa driftu, wymiana części i czyszczenie.">
+  <title>PADFIX | Serwis kontrolerów Xbox</title>
+  <style>
+    :root{--green:#39ff14;--bg:#080b08;--panel:#111711;--muted:#b9c4b7}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:#f5f7f4;font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    header{position:sticky;top:0;background:#080b08ed;border-bottom:1px solid #203020;z-index:5}
+    nav{max-width:1080px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:25px;font-weight:900;letter-spacing:1px}.brand span{color:var(--green)}
+    nav a{color:#e8eee7;text-decoration:none;margin-left:18px;font-size:14px}
+    nav a:hover{color:var(--green)}
+    .hero{max-width:1080px;margin:auto;padding:88px 22px 78px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+    .tag{color:var(--green);font-weight:800;letter-spacing:3px;font-size:12px}
+    h1{font-size:clamp(44px,7vw,76px);line-height:.98;margin:16px 0}
+    h1 span{color:var(--green)} .lead{color:var(--muted);font-size:18px;max-width:560px}
+    .btn{display:inline-block;margin-top:20px;background:var(--green);color:#071006;text-decoration:none;font-weight:900;padding:13px 22px;border-radius:8px}
+    .controller{border:1px solid #2b4728;background:radial-gradient(circle at 50% 35%,#1c351a,#0c120c 68%);border-radius:26px;min-height:260px;display:grid;place-items:center;box-shadow:0 0 50px #39ff1420}
+    .controller .symbol{font-size:100px;filter:drop-shadow(0 0 18px #39ff1480)}
+    section{max-width:1080px;margin:auto;padding:58px 22px}
+    h2{font-size:32px;margin:0 0 10px} .sub{color:var(--muted);margin-top:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+    .card{background:var(--panel);border:1px solid #243124;border-radius:14px;padding:22px}
+    .ico{font-size:28px}.card h3{margin:8px 0}.card p{color:var(--muted);margin:0}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .step{border-left:3px solid var(--green);padding:5px 16px}
+    .step b{color:var(--green);font-size:13px;letter-spacing:1px}
+    .contact{background:linear-gradient(120deg,#142313,#0d120d);border:1px solid #294526;border-radius:18px;padding:30px}
+    footer{border-top:1px solid #203020;color:#9ba79a;text-align:center;padding:24px;font-size:13px}
+    .review-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px;margin-top:24px}
+    .review-form{background:var(--panel);border:1px solid #243124;border-radius:14px;padding:22px}
+    .review-form label{display:block;margin:12px 0 6px;font-weight:700}
+    .review-form input,.review-form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #344434;background:#080d08;color:#fff;font:inherit}
+    .review-form textarea{min-height:105px;resize:vertical}
+    .stars{display:flex;gap:7px;margin:8px 0 14px}
+    .star{border:0;background:none;color:#536052;font-size:32px;cursor:pointer;padding:0;line-height:1}
+    .star.active{color:#39ff14}
+    .review-form button[type=submit]{margin-top:14px;background:var(--green);border:0;border-radius:8px;padding:13px 18px;font-weight:900;cursor:pointer}
+    .review-list{display:grid;gap:12px;align-content:start}
+    .review-item{background:var(--panel);border:1px solid #243124;border-radius:14px;padding:18px}
+    .review-item .rating{color:var(--green);letter-spacing:2px;font-size:18px}
+    .review-item p{margin:8px 0 0;color:var(--muted);white-space:pre-wrap;overflow-wrap:anywhere}
+    .notice{color:var(--muted);font-size:13px;margin-top:12px}
+    .status{margin-top:12px;color:var(--green);font-weight:700;min-height:24px}
+    @media(max-width:720px){.review-layout{grid-template-columns:1fr}}
+    @media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:58px}.controller{min-height:190px}.cards,.steps{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}}
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="brand">PAD<span>FIX</span></div>
+    <div><a href="#uslugi">Usługi</a><a href="#wysylka">Wysyłka</a><a href="#jak">Jak to działa</a><a href="#opinie">Opinie</a><a href="#kontakt">Kontakt</a></div>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <div class="tag">SERWIS KONTROLERÓW XBOX</div>
+      <h1>TWÓJ PAD.<br><span>DRUGIE ŻYCIE.</span></h1>
+      <p class="lead">Naprawa i odświeżanie kontrolerów Xbox. Zgłoś usterkę, a sprawdzimy, co da się zrobić i przedstawimy wycenę przed naprawą.</p>
+      <a class="btn" href="#kontakt">ZGŁOŚ USTERKĘ</a>
+    </div>
+    <div class="controller"><div class="symbol">🎮</div></div>
+  </div>
+
+  <section id="uslugi">
+    <div class="tag">CO ROBIMY</div><h2>Usługi PADFIX</h2>
+    <p class="sub">Zakres i możliwość naprawy potwierdzamy po sprawdzeniu kontrolera.</p>
+    <div class="cards">
+      <article class="card"><div class="ico">🕹️</div><h3>Naprawa driftu</h3><p>Diagnostyka problemów z analogami i — jeśli potrzeba — wymiana modułu.</p></article>
+      <article class="card"><div class="ico">🔧</div><h3>Wymiana części</h3><p>Wybrane przyciski, bumpery i inne elementy po wcześniejszym uzgodnieniu.</p></article>
+      <article class="card"><div class="ico">🧼</div><h3>Czyszczenie</h3><p>Odświeżenie kontrolera i usunięcie zabrudzeń z dostępnych elementów.</p></article>
+    </div>
+  </section>
+
+  <section id="wysylka">
+    <div class="tag">NAPRAWY Z WYSYŁKĄ</div><h2>Możliwe sposoby wysyłki</h2>
+    <p class="sub">Po wcześniejszym uzgodnieniu możemy ustalić przekazanie kontrolera przez wybranego przewoźnika.</p>
+    <div class="cards">
+      <article class="card"><div class="ico">📦</div><h3>InPost</h3><p>Paczkomat lub kurier — szczegóły ustalamy przed nadaniem.</p></article>
+      <article class="card"><div class="ico">🚚</div><h3>DHL</h3><p>Wysyłka kurierska po wcześniejszym uzgodnieniu.</p></article>
+      <article class="card"><div class="ico">📬</div><h3>Inne firmy</h3><p>Możemy ustalić także DPD, ORLEN Paczkę lub Pocztex.</p></article>
+    </div>
+    <p class="sub" style="margin-top:18px">Ważne: strona nie tworzy etykiet ani nie rezerwuje kuriera. Przed wysyłką skontaktuj się z PADFIX i poczekaj na potwierdzenie adresu oraz sposobu nadania.</p>
+  </section>
+
+  <section id="jak">
+    <div class="tag">PROSTO I JASNO</div><h2>Jak wygląda naprawa?</h2>
+    <div class="steps">
+      <div class="step"><b>01 / ZGŁOSZENIE</b><h3>Opisz problem</h3><p class="sub">Napisz, co nie działa i jaki masz model kontrolera.</p></div>
+      <div class="step"><b>02 / WYCENA</b><h3>Najpierw ustalamy koszt</h3><p class="sub">Przed rozpoczęciem naprawy poznasz cenę i zakres prac.</p></div>
+      <div class="step"><b>03 / ODBIÓR</b><h3>Test i zwrot</h3><p class="sub">Po naprawie sprawdzamy działanie i przekazujemy kontroler.</p></div>
+    </div>
+  </section>
+
+  <section id="opinie">
+    <div class="tag">OCENY KLIENTÓW</div><h2>Opinie o PADFIX</h2>
+    <p class="sub">Masz już za sobą naprawę? Zostaw ocenę i krótką opinię.</p>
+    <div class="review-layout">
+      <form class="review-form" id="reviewForm">
+        <h3>Dodaj opinię</h3>
+        <label for="reviewName">Nick</label>
+        <input id="reviewName" maxlength="30" placeholder="Np. Gracz123" required>
+        <label>Ocena</label>
+        <div class="stars" id="starPicker" role="group" aria-label="Wybierz ocenę od 1 do 5">
+          <button class="star" type="button" data-rating="1" aria-label="1 gwiazdka">★</button>
+          <button class="star" type="button" data-rating="2" aria-label="2 gwiazdki">★</button>
+          <button class="star" type="button" data-rating="3" aria-label="3 gwiazdki">★</button>
+          <button class="star" type="button" data-rating="4" aria-label="4 gwiazdki">★</button>
+          <button class="star" type="button" data-rating="5" aria-label="5 gwiazdek">★</button>
+        </div>
+        <label for="reviewText">Treść opinii</label>
+        <textarea id="reviewText" maxlength="600" placeholder="Napisz, jak oceniasz naprawę…" required></textarea>
+        <button type="submit">WYŚLIJ OPINIĘ</button>
+        <div class="status" id="reviewStatus" aria-live="polite"></div>
+        <p class="notice">Opinie są sprawdzane przed publikacją. Nie podawaj w opinii numeru telefonu, adresu ani innych prywatnych danych.</p>
+      </form>
+      <div class="review-list" id="reviewList"><article class="review-item"><strong>Opinie klientów</strong><p>Po podłączeniu bazy danych pojawią się tutaj zatwierdzone opinie.</p></article></div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="contact">
+      <div class="tag">MASZ PROBLEM Z PADEM?</div>
+      <h2>Skontaktuj się z PADFIX</h2>
+      <p class="sub">Uzupełnij dane kontaktowe poniżej w pliku strony albo podaj je osobie, która będzie pomagała Ci prowadzić serwis.</p>
+      <p><strong>Telefon:</strong> <a style="color:var(--green)" href="tel:+48721702206">721 702 206</a></p>
+      <p><strong>E-mail:</strong> <a style="color:var(--green)" href="mailto:padfix.serwis@gmail.com">padfix.serwis@gmail.com</a></p>
+      <p class="sub">Ceny ustalane indywidualnie po sprawdzeniu kontrolera. Nie wysyłaj kontrolera bez wcześniejszego uzgodnienia sposobu przekazania.</p>
+    </div>
+  </section>
+</main>
+<footer>© PADFIX — Serwis kontrolerów Xbox. Niezależny projekt serwisowy, niepowiązany z Microsoft ani Xbox.</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Wklej tutaj URL projektu i klucz anon (publishable) z Supabase.
+  // Nigdy nie wklejaj klucza service_role do publicznej strony.
+  const SUPABASE_URL = "UZUPELNIJ_URL_PROJEKTU";
+  const SUPABASE_ANON_KEY = "UZUPELNIJ_KLUCZ_ANON";
+  let selectedRating = 0;
+  const starButtons = [...document.querySelectorAll('.star')];
+  const statusBox = document.getElementById('reviewStatus');
+  const form = document.getElementById('reviewForm');
+  const list = document.getElementById('reviewList');
+  function paintStars(){ starButtons.forEach(b => { const on=Number(b.dataset.rating)<=selectedRating; b.classList.toggle('active',on); b.setAttribute('aria-pressed',String(Number(b.dataset.rating)===selectedRating)); }); }
+  starButtons.forEach(b => b.addEventListener('click',()=>{selectedRating=Number(b.dataset.rating);paintStars();}));
+  const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('UZUPELNIJ') && !SUPABASE_ANON_KEY.includes('UZUPELNIJ');
+  const db = configured ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
+  function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+  async function loadReviews(){
+    if(!db){list.innerHTML='<article class="review-item"><strong>Baza opinii nie jest jeszcze podłączona</strong><p>Formularz zacznie działać po konfiguracji Supabase.</p></article>';return;}
+    const {data,error}=await db.from('reviews').select('nickname,rating,content,created_at').eq('approved',true).order('created_at',{ascending:false}).limit(50);
+    if(error){list.innerHTML='<article class="review-item"><p>Nie udało się wczytać opinii. Spróbuj później.</p></article>';return;}
+    if(!data.length){list.innerHTML='<article class="review-item"><p>Brak zatwierdzonych opinii. Możesz dodać pierwszą!</p></article>';return;}
+    list.innerHTML=data.map(r=>`<article class="review-item"><strong>${escapeHtml(r.nickname)}</strong><div class="rating" aria-label="Ocena ${r.rating} na 5">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div><p>${escapeHtml(r.content)}</p></article>`).join('');
+  }
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const nickname=document.getElementById('reviewName').value.trim();
+    const content=document.getElementById('reviewText').value.trim();
+    if(!selectedRating){statusBox.textContent='Wybierz ocenę w gwiazdkach.';return;}
+    if(!db){statusBox.textContent='System opini nie jest jeszcze podłączony do bazy danych.';return;}
+    statusBox.textContent='Wysyłanie…';
+    const {error}=await db.from('reviews').insert({nickname,rating:selectedRating,content});
+    if(error){statusBox.textContent='Nie udało się wysłać opinii. Spróbuj ponownie.';return;}
+    form.reset();selectedRating=0;paintStars();statusBox.textContent='Dzięki! Opinia czeka na zatwierdzenie przez administratora.';
+  });
+  loadReviews();
+</script>
+</body>
+</html>
